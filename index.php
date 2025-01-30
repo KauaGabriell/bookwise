@@ -14,7 +14,7 @@
         <nav class="mx-auto max-w-screen-lg py-4 flex justify-between">
             <div class="font-bold text-xl tracking-wide">Book Wise</div>
             <ul class="flex space-x-4 font-bold">
-                <li><a href="#" class="text-lime-500">Explorar</a></li>
+                <li><a href="/index.php" class="text-lime-500">Explorar</a></li>
                 <li><a href="/meus-livros.php" class="hover:underline">Meus Livros</a></li>
             </ul>
 
@@ -34,14 +34,88 @@
 
 
         <!--Section de Livros-->
-        <section class="space-y-4">
-
+        <section class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        
             <!--Livros-->
-            <div class="w-1/3 p-2 rounded  bg-stone-900 border-stone-800 border-2">
+            <div class="p-2 rounded  bg-stone-900 border-stone-800 border-2">
                 <div class="flex"> <!--Div Pai que contém a Imagem e as Infos Iniciais do Livro-->
                     <div class="w-1/3">Imagem</div> <!--Imagem do Livro-->
                     <div><!--Bloco as Informações iniciais do Livro-->
-                        <div class="font-semibold">Titulo</div>
+                        <a href="/livro.php" class="font-semibold hover:underline">Titulo</a>
+                        <div class="text-xs italic">Autor</div>
+                        <div class="text-xs italic">⭐⭐⭐⭐⭐(3Avaliações)</div>
+                    </div>
+                </div>
+                <div> <!--Descrição dos Livros-->
+                    Descrição
+                </div>
+            </div>
+
+             <!--Livros-->
+             <div class="p-2 rounded  bg-stone-900 border-stone-800 border-2">
+                <div class="flex"> <!--Div Pai que contém a Imagem e as Infos Iniciais do Livro-->
+                    <div class="w-1/3">Imagem</div> <!--Imagem do Livro-->
+                    <div><!--Bloco as Informações iniciais do Livro-->
+                        <a href="/livro.php" class="font-semibold hover:underline">Titulo</a>
+                        <div class="text-xs italic">Autor</div>
+                        <div class="text-xs italic">⭐⭐⭐⭐⭐(3Avaliações)</div>
+                    </div>
+                </div>
+                <div> <!--Descrição dos Livros-->
+                    Descrição
+                </div>
+            </div>
+
+             <!--Livros-->
+             <div class="p-2 rounded  bg-stone-900 border-stone-800 border-2">
+                <div class="flex"> <!--Div Pai que contém a Imagem e as Infos Iniciais do Livro-->
+                    <div class="w-1/3">Imagem</div> <!--Imagem do Livro-->
+                    <div><!--Bloco as Informações iniciais do Livro-->
+                        <a href="/livro.php" class="font-semibold hover:underline">Titulo</a>
+                        <div class="text-xs italic">Autor</div>
+                        <div class="text-xs italic">⭐⭐⭐⭐⭐(3Avaliações)</div>
+                    </div>
+                </div>
+                <div> <!--Descrição dos Livros-->
+                    Descrição
+                </div>
+            </div>
+
+             <!--Livros-->
+             <div class="p-2 rounded  bg-stone-900 border-stone-800 border-2">
+                <div class="flex"> <!--Div Pai que contém a Imagem e as Infos Iniciais do Livro-->
+                    <div class="w-1/3">Imagem</div> <!--Imagem do Livro-->
+                    <div><!--Bloco as Informações iniciais do Livro-->
+                        <a href="/livro.php" class="font-semibold hover:underline">Titulo</a>
+                        <div class="text-xs italic">Autor</div>
+                        <div class="text-xs italic">⭐⭐⭐⭐⭐(3Avaliações)</div>
+                    </div>
+                </div>
+                <div> <!--Descrição dos Livros-->
+                    Descrição
+                </div>
+            </div>
+
+             <!--Livros-->
+             <div class="p-2 rounded  bg-stone-900 border-stone-800 border-2">
+                <div class="flex"> <!--Div Pai que contém a Imagem e as Infos Iniciais do Livro-->
+                    <div class="w-1/3">Imagem</div> <!--Imagem do Livro-->
+                    <div><!--Bloco as Informações iniciais do Livro-->
+                        <a href="/livro.php" class="font-semibold hover:underline">Titulo</a>
+                        <div class="text-xs italic">Autor</div>
+                        <div class="text-xs italic">⭐⭐⭐⭐⭐(3Avaliações)</div>
+                    </div>
+                </div>
+                <div> <!--Descrição dos Livros-->
+                    Descrição
+                </div>
+            </div>
+
+            <div class="p-2 rounded  bg-stone-900 border-stone-800 border-2">
+                <div class="flex"> <!--Div Pai que contém a Imagem e as Infos Iniciais do Livro-->
+                    <div class="w-1/3">Imagem</div> <!--Imagem do Livro-->
+                    <div><!--Bloco as Informações iniciais do Livro-->
+                        <a href="/livro.php" class="font-semibold hover:underline">Titulo</a>
                         <div class="text-xs italic">Autor</div>
                         <div class="text-xs italic">⭐⭐⭐⭐⭐(3Avaliações)</div>
                     </div>
