@@ -32,11 +32,26 @@
             <button type="submit">🔍</button>
         </form>
 
-        <div>
-            lista final
-        </div>
 
+        <!--Section de Livros-->
+        <section class="space-y-4">
 
+            <!--Livros-->
+            <div class="w-1/3 p-2 rounded  bg-stone-900 border-stone-800 border-2">
+                <div class="flex"> <!--Div Pai que contém a Imagem e as Infos Iniciais do Livro-->
+                    <div class="w-1/3">Imagem</div> <!--Imagem do Livro-->
+                    <div><!--Bloco as Informações iniciais do Livro-->
+                        <div class="font-semibold">Titulo</div>
+                        <div class="text-xs italic">Autor</div>
+                        <div class="text-xs italic">⭐⭐⭐⭐⭐(3Avaliações)</div>
+                    </div>
+                </div>
+                <div> <!--Descrição dos Livros-->
+                    Descrição
+                </div>
+            </div>
+            
+        </section>
 
 
 
