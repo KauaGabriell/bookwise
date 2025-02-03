@@ -2,5 +2,7 @@
 <?php
 require 'dados.php';
 
-view('index');
+view('index', [
+    'livros' => $livros
+])
 ?>

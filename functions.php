@@ -1,13 +1,13 @@
 <?php
-
-function view($code){
-    $view = "livro";
-    require "views/template/app.php";
+function view($view, $data = []) {
+    extract($data);
+    require __DIR__ . "/views/template/app.php";
 }
 
-
-function abort($code){
+function abort($code) {
     http_response_code($code);
-    view($code);
-    die();
+    $view = $code;
+    require __DIR__ . "/views/template/app.php";
+    exit();
 }
+?>
