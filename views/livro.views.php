@@ -14,3 +14,8 @@
         <?= $livro['descricao'] ?>
     </div>
 </div>
+
+<?php
+phpinfo();
+?>
+
