@@ -1,5 +1,5 @@
 <form class="w-full flex space-x-2 mt-6">
-    <input type="text" class="border-stone-800 border-2 rounded-md bg-stone-900 text-sm focus:outline-none px-2 py-1" placeholder="Pesquisar...">
+    <input type="text" name="pesquisar" class="border-stone-800 border-2 rounded-md bg-stone-900 text-sm focus:outline-none px-2 py-1" placeholder="Pesquisar...">
     <button type="submit">🔍</button>
 </form>
 
@@ -13,13 +13,13 @@
             <div class="flex"> <!--Div Pai que contém a Imagem e as Infos Iniciais do Livro-->
                 <div class="w-1/3">Imagem</div> <!--Imagem do Livro-->
                 <div class="space-y-2"><!--Bloco as Informações iniciais do Livro-->
-                    <a href="/livro.php?id=<?= $livro['id'] ?>" class="font-semibold hover:underline"><?= $livro['titulo'] ?></a>
-                    <div class="text-xs italic"><?= $livro['autor'] ?></div>
+                    <a href="/livro.php?id=<?= $livro->id ?>" class="font-semibold hover:underline"><?= $livro->titulo ?></a>
+                    <div class="text-xs italic"><?= $livro->autor ?></div>
                     <div class="text-xs italic">⭐⭐⭐⭐⭐(3Avaliações)</div>
                 </div>
             </div>
             <div class="mt-2"> <!--Descrição dos Livros-->
-                <?= $livro['descricao'] ?>
+                <?= $livro->descricao ?>
             </div>
         </div>
 

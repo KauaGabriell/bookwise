@@ -1,30 +1,36 @@
 <?php
-//Representação de um Registro do banco de dados em forma de classe
-class Livro{
-    public $id;
-    public $titulo;
-    public $descricao;
-    public $autor;
-}
 
+use function PHPSTORM_META\sql_injection_subst;
 
-class DB {
-    public function livros(){
-        $db =  $pdo = new PDO('sqlite:database.sqlite');
-        $query = $db->query("SELECT * FROM livros");
-        $items = $query->fetchAll();
-        $retorno = [];
+class DB
+{
+    private $db;
 
-        foreach($items as $item){
-            $livro = new Livro;
-            $livro->id = $item['id'];
-            $livro->titulo = $item['titulo'];
-            $livro->autor = $item['autor'];
-            $livro->descricao = $item['descricao'];
-
-            $retorno [] = $livro;
-        }
-
-        return $retorno;
+    public function __construct()
+    {
+        $this -> db = new PDO('sqlite:database.sqlite');
     }
+
+    public function livros($pesquisar = null)
+    {
+        $sql = "SELECT * FROM livros WHERE titulo like '%pesquisa%' OR autor LIKE '%pesquisa%' OR descricao LIKE '%pesquisa%' " ;
+        $query = $this->db->query($sql);
+        $items = $query->fetchAll();
+        
+        return array_map(fn($item) => Livro::make($item), $items);
+        
+    }
+
+
+    public function livro($id)
+{
+    $sql = "SELECT * FROM livros WHERE id = " . $id; // Corrigido: adicionado espaço após "FROM livros"
+    $query = $this->db->query($sql);
+    $items = $query->fetchAll();
+    $retorno = [];
+
+    return array_map(fn($item) => Livro::make($item), $items);
+
+    }
+
 }
