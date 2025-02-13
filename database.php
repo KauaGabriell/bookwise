@@ -13,7 +13,12 @@ class DB
 
     public function livros($pesquisar = null)
     {
-        $sql = "SELECT * FROM livros WHERE titulo like '%pesquisa%' OR autor LIKE '%pesquisa%' OR descricao LIKE '%pesquisa%' " ;
+        if ($pesquisar === null) {
+            $sql = "SELECT * FROM livros";
+        } else {
+            $sql = "SELECT * FROM livros WHERE titulo LIKE '%$pesquisar%' OR autor LIKE '%$pesquisar%' OR descricao LIKE '%$pesquisar%'";
+        }
+        
         $query = $this->db->query($sql);
         $items = $query->fetchAll();
         
